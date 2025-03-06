@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Smooch+Sans:wght@100..900&display=swap');
-
+:root {
+  --dark : #8D0B41;
+  --prime : #D39D55;
+  --second :  #D6CFB4;
+  --light : #FFF8E6;
+}
 * {
   font-family: Roboto Slab;
   margin: 0;
@@ -19,7 +24,7 @@ body {
 
 a {
   appearance: none;
-  color: black;
+  color: var(--dark);
   text-decoration: none;
 }
 
@@ -29,7 +34,7 @@ li {
 
 header {
   background-color: white;
-  color: black;
+  color: var(--dark);
   display: flex;
   width: 100%;
   position: sticky;
@@ -38,7 +43,7 @@ header {
   align-items: center;
   padding: 20px 40px;
   z-index: 3;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px var(--dark);
   transition: top 0.5s;
 }
 
@@ -66,16 +71,16 @@ header a img {
 button {
   padding: 15px;
   border-radius: 30px;
-  background-color: black;
+  background-color: var(--dark);
   color: white;
   font-size: 1.03em;
   transition: 0.4s;
-  border: 3px solid black;
+  border: 3px solid var(--dark);
 }
 
 button:hover {
   background-color: transparent;
-  color: black;
+  color: var(--dark);
 
 }
 
@@ -92,7 +97,7 @@ header nav ul li:hover {
 }
 
 header nav ul li a:hover {
-  color: #A31D1D;
+  color: var(--prime);
 }
 
 .hero {
@@ -100,7 +105,7 @@ header nav ul li a:hover {
   background-size: cover;
   width: 100%;
   height: 700px;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px var(--dark);
   transition: 1s;
 }
 
@@ -113,7 +118,7 @@ header nav ul li a:hover {
 }
 
 .hero div div p {
-  color: black;
+  color: var(--dark);
   font-size: 3.6em;
   font-weight: 600;
 }
@@ -125,7 +130,7 @@ header nav ul li a:hover {
 .hero div button {
   padding: 15px 30px;
   color: white;
-  background-color: black;
+  background-color: var(--dark);
 }
 
 .hero div button:hover {
@@ -136,10 +141,10 @@ header nav ul li a:hover {
 .prize {
   width: 100%;
   height: 700px;
-  position: relative;
 }
 
 .prize video {
+  position: fixed;
   width: 100%;
   position: absolute;
 }
@@ -152,7 +157,7 @@ footer {
   position: relative;
   bottom: 0;
   padding: 40px;
-  background-color: black;
+  background-color: var(--dark);
   box-shadow: 0 0 5px #c3c3c3;
 }
 

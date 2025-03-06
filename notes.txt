@@ -1,1 +1,5 @@
-gray : #606470
+maroon : #8D0B41
+gold : #D39D55
+gray : #D6CFB4
+white : #FFF8E6
+
