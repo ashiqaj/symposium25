@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Kanit;
+    height: fit-content;
+    font-size: 1em;
+    height: 150vh;
+}
+a {
+    appearance: none;
+    color: black;
+    text-decoration: none;
+}
+li {
+    list-style-position: inside;
+}
+header {
+    background-color: white;
+    color: black;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 18px;
+    z-index: 3;
+    box-shadow: 0 0 5px black;
+    transition: top 0.3s;
+}
+.hidden {
+    top: -60px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+}
+header > a {
+    font-size: 1.6em;
+    color: #A31D1D;
+}
+header nav ul li{
+    text-transform: uppercase;
+    font-size: 0.85em;
+    list-style: none;
+    padding: 10px 0;
+}
+header nav ul li a pre {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    color: #A31D1D;
+}
+.hero {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    position: relative;
+    bottom: 0;
+    padding: 40px;
+    background-color: #c3c3c3;
+    box-shadow: 0 0 5px black;
+}
+footer .comp {
+    width: 20%;
+}
+footer div h3{
+    color: #A31D1D;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+  }
+  .container .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(
+      45deg,
+      #00f376 10%,
+      transparent 10%,
+      transparent 50%,
+      #00f376 50%,
+      #00f376 60%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-size: 40px 40px;
+    transform: rotate(calc(var(--i) * 90deg));
+    animation: animate 0.3s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0;
+    }
+    100% {
+      background-position: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container .box {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container .box {
+      width: 150px;
+      height: 150px;
+    }
+  }
